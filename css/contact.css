@@ -1,0 +1,141 @@
+body {
+    background: url(../img/bg-contact.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+
+/* NAVBAR */
+.navbar {
+    background: rgb(3, 6, 32);
+    text-align: center;
+}
+
+.navbar-brand img {
+    width: 60px;
+    height: 45px;
+    border-radius: 5px;
+}
+
+.nav-link {
+    color: white !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7)
+}
+
+.nav-link:hover {
+    color: blueviolet !important;
+}
+
+.dropdown-menu {
+    text-align: center;
+    background-color: rgb(3, 6, 32);
+}
+
+.dropdown-item {
+    color: white;
+}
+
+.dropdown-item:hover {
+    color: blueviolet;
+    background-color: rgb(3, 6, 32);
+}
+
+/* UTILITY */
+.btn {
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: blueviolet;
+}
+
+.btn-outline-light:hover {
+    color: white;
+}
+
+/* CONTACT */
+.contact {
+    z-index: 1;
+    position: relative;
+    margin-top: 120px;
+}
+
+.card-body {
+    text-align: left;
+}
+
+.list-group {
+    margin-bottom: 15px;
+}
+
+.fas, .far, .fab {
+    font-size: 30px;
+}
+
+iframe {
+    height: 450px;
+    border-radius: 5px;
+    margin-bottom: 12px;
+}
+
+.sosmed .fab {
+    font-size: 35px;
+    color: white;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    transition: 1s;
+}
+
+.sosmed .fab:hover {
+    color: blueviolet;
+    transform: rotate(360deg);
+}
+
+/* PHONE */
+@media (max-width:574px) {
+    .col-lg-4 {
+        text-align: center;
+    }
+
+    .card-body {
+        text-align: center;
+    }
+
+    .col-sm-8 p {
+        padding-top: 10px;
+    }
+}
+
+/* DESKTOP VERSION */
+@media (min-width:992px) {
+    body::after {
+        background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+    }    
+
+    .navbar-brand, .nav-link {
+        color: white !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7)
+    }
+
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 30px;
+    }
+
+    .dropdown-menu {
+        text-transform: uppercase;
+        text-align: left;
+    }
+
+}
+
+
