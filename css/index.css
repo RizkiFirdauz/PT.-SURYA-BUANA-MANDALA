@@ -58,7 +58,7 @@
     overflow: hidden; 
 }
 
-.jumbotron::after {
+/* .jumbotron::after {
     content: '';
     display: block;
     width: 100%;
@@ -66,7 +66,7 @@
     position: absolute;
     bottom: 0;
     background-image: linear-gradient(to right, rgba(7, 29, 155, 0.616) , rgba(226, 21, 82, 0.685)70%);
-}
+} */
 
 .jumbotron .container {
     z-index: 1;
@@ -106,6 +106,7 @@
 .jumbotron .d-block {
     height: 78vh;
     width: 100%;
+    filter: brightness(70%);
 }
 
 /* INFO PANEL */
@@ -158,10 +159,6 @@
     font-size: 18px;
     color: #acacac;
     margin: 30px 0;
-}
-
-.d-block {
-    border-radius: 5px;
 }
 
 /* FOOTER */
