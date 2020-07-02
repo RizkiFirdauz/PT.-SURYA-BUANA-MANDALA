@@ -59,9 +59,10 @@
     margin-top: 70px;
     position: relative;
     overflow: hidden; 
+    filter: brightness(70%);
 }
 
-.jumbotron::after {
+/* .jumbotron::after {
     content: '';
     display: block;
     width: 100%;
@@ -69,7 +70,7 @@
     position: absolute;
     bottom: 0;
     background-image: linear-gradient(to right, rgba(7, 29, 155, 0.616) , rgba(226, 21, 82, 0.678)80%)
-}
+} */
 
 .jumbotron .container {
     z-index: 1;
